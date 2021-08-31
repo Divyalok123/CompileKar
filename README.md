@@ -1,5 +1,7 @@
 # CompilerKar 
 
+App is visible here: https://compilekar.herokuapp.com/
+
 A basic code editor and compiler. Built using ReactJS, Ace-Editor, and Jdoodle.
 
 To have a local copy of this folder follow these steps:
