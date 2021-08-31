@@ -9,4 +9,4 @@ To have a local copy of this folder follow these steps:
 3) Run <code>npm install</code>
 4) Run <code>npm start</code>
 
-<sub>---- My first ReactJS project 😁 ----</sub>
+If found any bug please mail me here: divyjais2001@gmail.com
