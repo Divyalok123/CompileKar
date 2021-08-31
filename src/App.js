@@ -60,6 +60,9 @@ class App extends Component {
         clientSecret: process.env.REACT_APP_JDOODLE_CLIENT_SECRET
       };
 
+      console.log("clientID: ", clientId);
+      console.log("clientSecret: ", clientSecret);
+
       var proxy = "https://cors-anywhere.herokuapp.com/";
       var url = "https://api.jdoodle.com/v1/execute";
 
