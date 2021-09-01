@@ -1,4 +1,5 @@
 const express = require('express')
+const path = require('path');
 require('dotenv').config()
 
 const cors = require('cors');
@@ -13,6 +14,12 @@ app.use(cors({
     origin: true,
     credentials: true
 }));
+
+app.use(express.static(path.join(__dirname, 'compilekar/build')));
+
+app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname + '/compilekar/build/index.html'));
+})
 
 app.get('/', (req, res) => {
     return res.json({'status': 'working'});
