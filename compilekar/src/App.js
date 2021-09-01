@@ -3,7 +3,8 @@ import Editor from "./components/editor";
 import Input from "./components/input";
 import Output from "./components/output";
 import DropDown from "./components/dropdown";
-import { modeForLang }from "./common/mappings.js"
+import { modeForLang }from "./common/mappings.js";
+import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 
 import './common/app.css';
 import axios from 'axios';
@@ -102,6 +103,14 @@ class App extends Component {
           <div className="output-box">
             <Output output={this.state.output} />
           </div>
+        </div>
+        <div className="github-link">
+          <a href="https://www.linkedin.com/in/divyalok-j-69a314134/" target="_blank" rel="noreferrer">
+            <AiFillLinkedin size="42px"/>
+          </a>
+          <a href="https://github.com/Divyalok123/CompileKar" target="_blank" rel="noreferrer">
+            <AiFillGithub size="42px"/>      
+          </a>
         </div>
       </div>
     );
