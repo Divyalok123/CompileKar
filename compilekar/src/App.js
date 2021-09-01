@@ -83,9 +83,7 @@ class App extends Component {
               })
             })
             .catch((err) => {
-              console.log("Error in axios request!")
-              console.log(err.response)
-              console.log(err.request)
+              console.log("Error in axios request: ", err);
             });
 
     } catch(err) {

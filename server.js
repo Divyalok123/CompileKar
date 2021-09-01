@@ -17,10 +17,6 @@ app.use(cors({
 
 app.use(express.static(path.join(__dirname, 'compilekar/build')));
 
-app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname + '/compilekar/build/index.html'));
-})
-
 app.get('/', (req, res) => {
     return res.json({'status': 'working'});
 })
@@ -47,6 +43,10 @@ app.get('/api/compile', async (req, res) => {
     }
 
     res.json({output});
+})
+
+app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname + '/compilekar/build/index.html'));
 })
 
 app.listen(port, () => {
