@@ -1,8 +1,10 @@
 # CompilerKar 
 
-App is visible here: https://compilekar.herokuapp.com/
+App is live here: https://compilekar.herokuapp.com/
 
-A basic code editor and compiler. Built using ReactJS, Ace-Editor, and Jdoodle.
+A basic code editor and compiler for quick compiling on the go. No need to open IDEs and big editors everytime. 
+
+Tech Stack: ReactJS, Ace-Editor, and Jdoodle.
 
 To have a local copy of this folder follow these steps:
 
@@ -11,4 +13,4 @@ To have a local copy of this folder follow these steps:
 3) Run <code>npm install</code>
 4) Run <code>npm start</code>
 
-If found any bug please mail me here: divyjais2001@gmail.com
+If want to report any bug or discuss something, mail me here: divyjais2001@gmail.com
